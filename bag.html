@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>Shopping Bag</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+<script src="js/jquery.js"></script>   
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row navigation2" >
+        <div class="col-md-1 logo" ><a href="index.html" ><img src="image/Myntra-logo-png-icon-715x715.png" alt="myntra.com" height="58px" width="60px" align="right"></a>
+	    </div>
+		<div class="col-md-8 bagnav">
+		    <ol class="checkout-steps"> 
+				<li class="step step1 active-step">BAG</li> 
+				<li class="divider"></li>
+				<li class="step step2">ADDRESS</li>
+				<li class="divider"></li> 
+				<li class="step step3">PAYMENT</li> 
+			</ol>
+		</div>
+        <div class="col-md-3 bagnav">
+		   <img src="image/Secure.jpg" height="30px" width="28px"><span class="secure">100% SECURE</span>
+		</div>
+    </div> 
+	
+	
+    <!--shopping bag page -->	
+	
+	<div class="row main1">
+		<div class="col-md-1">
+		</div>
+	    <div class="col-md-7 bag">
+			<div class="bag-pro-details">
+				<div>
+					<b>Available offers</b>
+				</div>
+				<div class="more-offers">
+					<li><span>10% Cashback upto Rs 500 on a minimum spend of Rs 1,000 with PayZapp. TCA</span></li>
+					<li><span>10% SuperCash up to Rs 200 on transaction with MobiKwik. TCA</span></li>
+					<li><span>Flat Rs 200 Cashback for First time users of Airtel Payment Bank on Myntra on a min spend of Rs 2000. TCA</span></li>
+					<div class="size-chart-button" id="loadMore1">See More</div>
+					<div class="size-chart-button" id="loadless1">See Less</div>
+				</div>
+			</div>
+			<div class="bag-pro-details">
+				<img src="image/free-home-delivery.jpg" width="30px" height="20px">
+				<span class="free-delivery"> Yay! <b>Free delivery</b> on this order.</span>
+			</div>
+			<div>
+				<p><b >My Shopping Bag (1 Item)</b><strong class="total-order-price"> Rs. 799</strong><strong>Total:</strong></p>
+			</div>
+			<div class="bag-pro-details">
+				<div class="row item-qty-and-size">
+					<div class="col-md-3">
+						<img src="image/p2.jpg" height="180px" width="100%"> 
+					</div>
+					<div class="col-md-6">
+						<b>Anouk</b> <br>
+						Women Navy & White Printed Kurta Dress<br>
+						Sold by: Flashtech Retail<br><br>
+						<div class="qty-and-size bag-size-select">Size: <span class="size-change">S</span> <span></span></div>
+						<div class="qty-and-size bag-qty-select">Qty: <span class="qty-change">1</span> <span></span></div>
+					</div>
+					<div class="col-md-3 price">
+						<b class="total-order-price">Rs. 799</b><br>
+						<div>
+							<p>
+								<span><s id="qty-price">Rs. 999</s> </span>
+								<span class="price-detail-base-value bag-discount"> 20% OFF</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row remove">
+					
+					<div class="col-md-3 remove-option">
+						REMOVE 
+					</div>
+					<div class="col-md-9">
+						MOVE TO WISHLIST
+					</div>
+				</div>
+			</div>
+			<div class="bag-pro-details">
+				<a href="wishlist.html">
+					<div><img src="image/wishlist-logo.jpg" width="13px" height="18px"><span class="free-delivery"> Add More From Your Wishlist</span></div>
+				</a>
+			</div>
+		</div>
+		 
+		<div class="col-md-4">
+			<div class="bag-pro-price">
+				<div>
+					<p class="coupons">COUPONS</p>
+				
+					<span><img src=""></span>
+					<span class="free-delivery"><b>Apply Coupons</b></span>
+					<span><button id="apply-coupon" class="apply-coupon1">Apply</button></span>
+				</div>
+				<hr>
+				<div>
+					<p class="coupons">PRICE DETAILS</p>
+					<div class="price-detail-base-row">
+						<span>Bag Total</span>
+						<span class="price-detail-base-value total-price" id="qty-price">Rs. 999</span>
+						
+					</div>
+					<div class="price-detail-base-row">
+						<span>Bag Discount</span>
+						<span class="price-detail-base-value bag-discount">-Rs. 300</span>
+					</div>
+					<div class="price-detail-base-row">
+						<span>Coupon Discount</span>
+						<span class="price-detail-base-value price-detail-base-action apply-coupon1">Apply Coupon</span>
+					</div>
+					<div class="price-detail-base-row">
+						<span>Order Total</span>
+						<span class="price-detail-base-value total-order-price">Rs. 699</span>
+					</div>
+					<div class="price-detail-base-row">
+						<span>Delivery Charges</span>
+						<span class="price-detail-base-value">Rs. 0</span>
+					</div>
+				</div>
+				<hr>
+				<div><b>
+					<span>Total</span>
+					<span class="price-detail-base-value total-price">Rs. 699</span></b>
+				</div>
+				<div>
+					<a href="Address.html"><div class="place-order-button">PLACE ORDER</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--popup for size -->
+	<div class="popup-content3">
+		<div class="size-popup">
+			
+			<div class="row">
+					<div class="col-md-2"><img src="image/p2.jpg" width="130%" height="110%"></div>
+					<div class="col-md-10">
+						<span><b>Anouk</b><span class="close3"><img src="image/close.png" height="20px" width="20px"></span></span><br>
+						<span>Women Navy & White Printed Kurta Dress</span><br>
+						<span style="font-size:13px;"><b>Rs. 699</b> <s>Rs. 999</s><span class="bag-discount">20% OFF</span> </span>
+					</div>					
+			</div>
+			<hr width="105%">
+			<div>
+				<b>Select Size</b><br>
+				<div class="size-buttons">
+					<button id="size_XS">XS</button>						
+					<button id="size_S">S</button>
+					<button id="size_M">M</button>
+					<button id="size_L">L</button>
+					<button id="size_XL">XL</button>
+					<button id="size_XXL">XXL</button>
+				</div>
+				<div>Seller:<b> Flashtech Retail</b></div><br>
+				<div>
+					<div class="place-order-button done-button">DONE</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--popup for quantity -->
+	<div class="popup-content4">
+		<div class="qty-popup">
+			<div>
+				<span><b>Select Quantity</b></span>
+				<span class="close4"><img src="image/close.png" height="20px" width="20px"></span>
+			</div>
+			<hr>
+			<div class="size-buttons">
+				<button id="qty_1">1</button>						
+				<button id="qty_2">2</button>
+				<button id="qty_3">3</button>
+				<button id="qty_4">4</button>
+				<button id="qty_5">5</button><br><br>
+				<button id="qty_6">6</button>
+				<button id="qty_7">7</button>
+				<button id="qty_8">8</button>
+				<button id="qty_9">9</button>
+				<button id="qty_10">10</button>
+			</div>
+			<div>
+				<a><div class="place-order-button done-button">DONE</div></a>
+			</div>	
+			
+		</div>
+	</div>
+	
+	<div class="popup-content5">
+		
+		<div class="coupon-popup">
+			<div class="apply-coupon-code">
+					<span id="apply-coupon-code"><b>APPLY COUPON</b></span>
+					<span class="close5"><img src="image/close.png" height="20px" width="20px"></span>	
+			</div>
+			<div class="enter_code ">
+				<div class="search-container coupons_code">
+					<div >
+						<input type="text" placeholder="Enter coupon code">
+						<button>APPLY</button>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="available_coupons">
+					<div>No other coupons available</div>
+				</div>
+			</div>
+			<div class="row" id="max_saving">
+				<div class="col-md-5"><div><p>Maximum savings:</p><b>Rs.0</b></div></div>
+				<div class="col-md-7"><div class="place-order-button done-button">APPLY</div></div>
+			</div>	
+			
+		</div>
+	</div>
+	
+		<!--Footer -->
+	<div class="row">
+		<div class="col-md-9 checkout-footer"> 
+			<div class="content"> 
+				<div class="images"> 
+					<div class="footer-bank-ssl"><img src="image/checkoutSprite-V1-1 (2).jpg"></div> 
+					<div class="footer-bank-visa"><img src="image/checkoutSprite-V1-1 (5).jpg"></div> 
+					<div class="footer-bank-mc"><img src="image/checkoutSprite-V1-1 (3).jpg"></div>
+					<div class="footer-bank-ae"><img src="image/checkoutSprite-V1-1 (3)1.jpg"></div>
+					<div class="footer-bank-dc"><img src="image/checkoutSprite-V1-2.jpg"></div> 
+					<div class="footer-bank-nb"><img src="image/checkoutSprite-V1-3.jpg"></div> 
+					<div class="footer-bank-cod"><img src="image/checkoutSprite-V1-4.jpg"></div>
+					<div class="footer-bank-rupay"><img src="image/checkoutSprite-V1-6.jpg"></div> 
+					<div class="footer-bank-paypal"><img src="image/checkoutSprite-V1-8.jpg"></div>
+					<div class="footer-bank-bhim"><img src="image/checkoutSprite-V1-9.jpg"></div> 
+				</div> 
+				 
+			</div>
+		</div>
+		<div class="col-md-3 checkout-footer"> 
+			<div class="content1"> 
+				
+				<a href="contactus.html" class="contact-us"> 
+					<span>Need Help ? Contact Us</span> 
+				</a> 
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+
+<script src="js/javascript.js"></script>
+</body>
+</html>
