@@ -1,0 +1,458 @@
+<html>
+<head>
+<title>Address</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script> 
+<script src="js/jquery.js"></script>   
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row navigation2" >
+        <div class="col-md-1 logo" ><a href="index.html" ><img src="image/Myntra-logo-png-icon-715x715.png" alt="myntra.com" height="58px" width="60px" align="right"></a>
+	    </div>
+		<div class="col-md-8 bagnav">
+		    <ol class="checkout-steps"> 
+				<li class="step step1 ">BAG</li> 
+				<li class="divider"></li>
+				<li class="step step2 active-step">ADDRESS</li>
+				<li class="divider"></li> 
+				<li class="step step3">PAYMENT</li> 
+			</ol>
+		</div>
+        <div class="col-md-3 bagnav">
+		   <img src="image/Secure.jpg" height="30px" width="28px"><span class="secure">100% SECURE</span>
+		</div>
+    </div> 
+	
+	
+    <!--shopping bag page -->	
+	
+	<div class="row main1">
+		<div class="col-md-1">
+		</div>
+	    <div class="col-md-7 bag">
+			<div class="addressList-base-titleContainer">
+				<div class="addressList-base-title">Select Delivery Address</div>
+				<div class="addressList-base-addAddressButton open-new-address-form">
+					<div class="">ADD NEW ADDRESS</div>
+				</div>
+			</div>
+			<div id="default-address-of-customer">
+				<div class="addressList-base-defaultTitle">DEFAULT ADDRESS</div>
+				
+				<div class="addressBlocks-base-block ">
+					<div class="row">
+						<div class="select-address col-md-1">
+							<div class="selectedAddress1"><input type="radio" name="address1" checked></div>
+						</div>
+						<div class="col-md-11">
+							<div class=" addressBlocks-base-serviceable">
+								<div class="addressDetails-base-addressTitle">
+									<div class="addressDetails-base-name" id="name-of-the-customer2"><b>Nikita Negi</b></div>
+									<div class="addressDetails-base-addressType default-addresstype">Home</div>
+								</div>
+								<div class="addressBlocks-base-addressDetail" id="address-of-the-customer2">
+									<span id="home-of-the-customer2">283 </span>,
+									<span id="locality-of-the-customer2">Sector 10 A</span>
+								</div>
+								<span id="city-of-the-customer2">Gurgaon</span>,
+								<span id="state-of-the-customer2"> Haryana</span> - 
+								<span id="pincode-of-the-customer2">122001</span>
+							</div>
+							<div class="addressDetails-base-mobile">
+								<span>Mobile: </span>
+								<span id="number-of-the-customer2">9810369708</span>
+							</div>
+							<div class="addressServiceability-base-container">
+								<div>
+									<span class="addressServiceability-base-bullet">•</span>
+									<span>Pay on Delivery available</span>
+								</div>
+							</div>
+							<div class="addressBlocks-base-btns">
+								<button class="addressBlocks-base-remove" id="remove-default-address" >Remove</button>
+								<button class="addressBlocks-base-edit" id="edit-default-address" >Edit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="other-address-of-customer">
+				<div class="addressList-base-defaultTitle">OTHER ADDRESS</div>
+				<div class="addressBlocks-base-block ">
+					<div class="row">
+						<div class=" col-md-1">
+							<div class="selectedAddress1"><input type="radio" name="address1"></div>
+						</div>
+						<div class="col-md-11">
+							<div class=" addressBlocks-base-serviceable">
+								<div class="addressDetails-base-addressTitle">
+									<div class="addressDetails-base-name" id="name-of-the-customer1"><b>Vikas Negi</b></div>
+									<div class="addressDetails-base-addressType other-addresstype">Home</div>
+								</div>
+								<div class="addressBlocks-base-addressDetail" id="address-of-the-customer1">
+									<span id="home-of-the-customer1">283</span>,
+									<span id="locality-of-the-customer1">Sector 10 A</span>
+								
+								</div>
+								<span id="city-of-the-customer1">Gurgaon</span>,
+								<span id="state-of-the-customer1"> Haryana</span> - 
+								<span id="pincode-of-the-customer1">122001</span>
+							</div>
+							<div class="addressDetails-base-mobile">
+								<span>Mobile: </span>
+								<span id="number-of-the-customer1">8368100189</span>
+							</div>
+							<div class="addressServiceability-base-container">
+								<div>
+									<span class="addressServiceability-base-bullet">•</span>
+									<span>Pay on Delivery available</span>
+								</div>
+							</div>
+							<div class="addressBlocks-base-btns">
+								<button class="addressBlocks-base-remove" id="remove-other-address">Remove</button>
+								<button class="addressBlocks-base-edit" id="edit-other-address" >Edit</button>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="add-other-addresses">
+				<div class="addressList-base-defaultTitle " >OTHER ADDRESS</div>
+				<div class="addressBlocks-base-block ">
+					<div class="row">
+						<div class=" col-md-1">
+							<div class="selectedAddress1"><input type="radio" name="address1"></div>
+						</div>
+						<div class="col-md-11">
+							<div class=" addressBlocks-base-serviceable">
+								<div class="addressDetails-base-addressTitle">
+									<div class="addressDetails-base-name" id="name-of-the-customer"><b></b></div>
+									<div class="addressDetails-base-addressType add-other-addresstype"></div>
+								</div>
+								<div class="addressBlocks-base-addressDetail" id="address-of-the-customer">
+									<span id="home-of-the-customer"></span>
+									<span id="locality-of-the-customer"></span>
+								</div>
+								<span id="city-of-the-customer"></span>,
+								<span id="state-of-the-customer"></span> -
+								<span id="pincode-of-the-customer"></span>
+							</div>
+							<div class="addressDetails-base-mobile">
+								<span>Mobile:</span>
+								<span id="number-of-the-customer"></span>
+							</div>
+							<div class="addressServiceability-base-container">
+								<div>
+									<span class="addressServiceability-base-bullet">•</span>
+									<span>Pay on Delivery available</span>
+								</div>
+							</div>
+							<div class="addressBlocks-base-btns">
+								<button class="addressBlocks-base-remove" id="remove-other-added-address">Remove</button>
+								<button class="addressBlocks-base-edit" id="edit-other-added-address">Edit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="addressList-base-addBlock">
+				<div class="addressList-base-label open-new-address-form">+ Add New Address</div>
+			</div>
+		</div>
+		 
+		<div class="col-md-4">
+			<div class="addressDesktop-base-right">
+				<div>
+					<div class="serviceability-base-title">DELIVERY ESTIMATES</div>
+					<div class="serviceability-base-notification">
+						<span class="serviceability-base-note">Please Note: </span>
+						Dear customer, our delivery timelines are currently longer than usual. Stay home, stay safe and 
+						stay stylish while we try to deliver your order at the earliest.
+					</div>
+					<div class="serviceability-base-list">
+						<div class="serviceability-base-deliveryContainer">
+							<div><img src="image/Anouk-Women-Navy--White-Printed-Kurta-Dress-5351569924798010-1.jpg"></div>
+							<div class="serviceability-base-deliveryInfo">
+								<div>
+									<div>
+										<span>Estimated delivery by <b> 12 Jul 2020</b> </span>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="addressDesktop-base-priceBlock">
+					<div class="priceBlockCommon-base-items">PRICE DETAILS (1 Item)</div>
+					<div>
+						<div class="priceBreakUp-base-orderSummary">
+							<div class="priceDetail-base-row priceDetail-base-row-hide">
+								<span>Bag Total</span>								
+								<span class="priceDetail-base-value">
+									<span>Rs. 999</span>
+								</span>
+							</div>
+							<div class="priceDetail-base-row priceDetail-base-row-hide">
+								<span>Bag Discount</span>
+								<span class="priceDetail-base-value">
+									<span>-Rs. 300</span>
+								</span>
+							</div>
+							<div class="priceDetail-base-row">
+								<span>Order Total</span>
+								<span class="priceDetail-base-value">
+									<span>Rs. 699</span>
+								</span><br>
+								<span class=" priceDetail-base-action1">HIDE DETAILS</span>
+								<span class=" priceDetail-base-action">VIEW DETAILS</span>								
+								
+							</div>
+							<div class="priceDetail-base-row">
+								<span>Delivery Charges</span>
+								<span class="priceDetail-base-value">
+									<span class="">Rs. 0</span>
+								</span>
+							</div>
+							<div class="priceDetail-base-total">
+								<span>Total</span>
+								<span class="priceDetail-base-value ">								
+									<span>699</span>
+								</span>
+							</div>	
+						</div>
+					</div>
+				</div>
+			
+				<div class="addressDesktop-base-marginLeft">
+					<div class="button-base-button" >continue</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--Footer -->
+	<div class="row">
+		<div class="col-md-9 checkout-footer"> 
+			<div class="content"> 
+				<div class="images"> 
+					<div class="footer-bank-ssl"><img src="image/checkoutSprite-V1-1 (2).jpg"></div> 
+					<div class="footer-bank-visa"><img src="image/checkoutSprite-V1-1 (5).jpg"></div> 
+					<div class="footer-bank-mc"><img src="image/checkoutSprite-V1-1 (3).jpg"></div>
+					<div class="footer-bank-ae"><img src="image/checkoutSprite-V1-1 (3)1.jpg"></div>
+					<div class="footer-bank-dc"><img src="image/checkoutSprite-V1-2.jpg"></div> 
+					<div class="footer-bank-nb"><img src="image/checkoutSprite-V1-3.jpg"></div> 
+					<div class="footer-bank-cod"><img src="image/checkoutSprite-V1-4.jpg"></div>
+					<div class="footer-bank-rupay"><img src="image/checkoutSprite-V1-6.jpg"></div> 
+					<div class="footer-bank-paypal"><img src="image/checkoutSprite-V1-8.jpg"></div>
+					<div class="footer-bank-bhim"><img src="image/checkoutSprite-V1-9.jpg"></div> 
+				</div> 
+				 
+			</div>
+		</div>
+		<div class="col-md-3 checkout-footer"> 
+			<div class="content1"> 
+				
+				<a href="contactus.html" class="contact-us"> 
+					<span>Need Help ? Contact Us</span> 
+				</a> 
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="popup-content6">
+			
+		<div class="addressFormUI-base-container">
+			<div class="addressFormUI-base-header">
+			ADD NEW ADDRESS
+			<span class="close6"><img src="image/close.png" height="20px" width="20px"></span>
+			</div>
+			<div class="addressFormUI-base-scrollable">
+				<div class="addressFormUI-base-formHeader">CONTACT DETAILS</div>
+				<div class="addressFormUI-base-form">
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">						
+						<input class="inputV2-base-input " id="name" type="text" placeholder="Name*">
+					</div>
+					<div class="inputV2-base-inputRow ">
+						<input class="inputV2-base-input " id="mobile" type="tel" maxlength="10" placeholder="Mobile No*">
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">ADDRESS</div>
+				<div class="addressFormUI-base-form">
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="pincode" type="tel" maxlength="6" placeholder="Pin Code*" required>
+						</div>
+					</div>
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">
+						<input class="inputV2-base-input " id="streetAddress" type="text" placeholder="Address (House No, Building, Street, Area)*" rows="3">
+					</div>
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="locality" type="text" placeholder="Locality / Town*">
+						</div>
+					</div>
+					<div class="addressFormUI-base-cityContainer">
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="city" type="text" placeholder="City / District*">
+						</div>
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="state" type="text" placeholder="State*">
+						</div>
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">SAVE ADDRESS AS</div>
+				<div class="addressFormUI-base-form">
+					<div class="addressFormUI-base-addressTypes">
+						<div class="addressFormUI-base-addressTypeIcon addressFormUI-base-selectedAddressType" id="addressType-home">Home</div>
+						<div class="addressFormUI-base-addressTypeIcon " id="addressType-office">Work</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="addressFormUI-base-footer">
+				<div class="button-base-button done-button1">ADD ADDRESS</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	<!--edit other-addresses -->	
+	
+	
+	<div class="popup-content7">
+			
+		<div class="addressFormUI-base-container">
+			<div class="addressFormUI-base-header">
+			ADD NEW ADDRESS
+			<span class="close6"><img src="image/close.png" height="20px" width="20px"></span>
+			</div>
+			<div class="addressFormUI-base-scrollable">
+				<div class="addressFormUI-base-formHeader">CONTACT DETAILS</div>
+				<div class="addressFormUI-base-form">
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">						
+						<input class="inputV2-base-input " id="name1" type="text" placeholder="Name*" value="Vikas Negi">
+					</div>
+					<div class="inputV2-base-inputRow ">
+						<input class="inputV2-base-input " id="mobile1" type="tel" maxlength="10" placeholder="Mobile No*" value="8968100189">
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">ADDRESS</div>
+				<div class="addressFormUI-base-form">
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="pincode1" type="tel" maxlength="6" placeholder="Pin Code*" value="122001" required>
+						</div>
+					</div>
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">
+						<input class="inputV2-base-input " id="streetAddress1" type="text" placeholder="Address (House No, Building, Street, Area)*" value="283" rows="3">
+					</div>
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="locality1" type="text" placeholder="Locality / Town*" value="Sector 10 A">
+						</div>
+					</div>
+					<div class="addressFormUI-base-cityContainer">
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="city1" type="text" placeholder="City / District*" value="Gurgaon">
+						</div>
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="state1" type="text" placeholder="State*" value="Haryana">
+						</div>
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">SAVE ADDRESS AS</div>
+				<div class="addressFormUI-base-form">
+					<div class="addressFormUI-base-addressTypes">
+						<div class="addressFormUI-base-addressTypeIcon addressFormUI-base-selectedAddressType" id="addressType-home">Home</div>
+						<div class="addressFormUI-base-addressTypeIcon " id="addressType-office">Work</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="addressFormUI-base-footer">
+				<div class="button-base-button done-button">SAVE ADDRESS</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	<!-- edit default-address -->	
+	
+	
+	<div class="popup-content8">
+			
+		<div class="addressFormUI-base-container">
+			<div class="addressFormUI-base-header">
+			ADD NEW ADDRESS
+			<span class="close6"><img src="image/close.png" height="20px" width="20px"></span>
+			</div>
+			<div class="addressFormUI-base-scrollable">
+				<div class="addressFormUI-base-formHeader">CONTACT DETAILS</div>
+				<div class="addressFormUI-base-form">
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">						
+						<input class="inputV2-base-input " id="name2" type="text" placeholder="Name*" value="Nikita Negi">
+					</div>
+					<div class="inputV2-base-inputRow ">
+						<input class="inputV2-base-input " id="mobile2" type="tel" maxlength="10" placeholder="Mobile No*" value="9810369708">
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">ADDRESS</div>
+				<div class="addressFormUI-base-form">
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="pincode2" type="tel" maxlength="6" placeholder="Pin Code*" value="122001" required>
+						</div>
+					</div>
+					<div class="inputV2-base-inputRow addressFormUI-base-inputRow">
+						<input class="inputV2-base-input " id="streetAddress2" type="text" placeholder="Address (House No, Building, Street, Area)*" value="283" rows="3">
+					</div>
+					<div class="localityOptions-base-localityBlock">
+						<div class="inputV2-base-inputRow ">
+							<input class="inputV2-base-input " id="locality2" type="text" placeholder="Locality / Town*" value="Sector 10 A">
+						</div>
+					</div>
+					<div class="addressFormUI-base-cityContainer">
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="city2" type="text" placeholder="City / District*" value="Gurgaon">
+						</div>
+						<div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
+							<input class="inputV2-base-input " id="state2" type="text" placeholder="State*" value="Haryana">
+						</div>
+					</div>
+				</div>
+				<div class="addressFormUI-base-formHeader">SAVE ADDRESS AS</div>
+				<div class="addressFormUI-base-form">
+					<div class="addressFormUI-base-addressTypes">
+						<div class="addressFormUI-base-addressTypeIcon addressFormUI-base-selectedAddressType" id="addressType-home">Home</div>
+						<div class="addressFormUI-base-addressTypeIcon " id="addressType-office">Work</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="addressFormUI-base-footer">
+				<div class="button-base-button done-button" id="added-addressblock">SAVE ADDRESS</div>
+			</div>
+		</div>	
+	</div>
+
+	
+</div>
+
+<script src="js/javascript.js"></script>
+</body>
+</html>
